@@ -5,11 +5,11 @@ plugins {
 }
 
 dependencies {
-    implementation("androidx.camera:camera-core:1.0.2")
-    implementation("androidx.camera:camera-lifecycle:1.0.2")
-    api("androidx.camera:camera-view:1.0.0-alpha32")
-    api("androidx.camera:camera-camera2:1.0.2")
-    implementation("com.google.mlkit:barcode-scanning:17.0.1")
+    implementation("androidx.camera:camera-core:1.1.0-rc02")
+    implementation("androidx.camera:camera-lifecycle:1.1.0-rc02")
+    api("androidx.camera:camera-view:1.1.0-rc02")
+    api("androidx.camera:camera-camera2:1.1.0-rc02")
+    implementation("com.google.mlkit:barcode-scanning:17.0.2")
 }
 
 

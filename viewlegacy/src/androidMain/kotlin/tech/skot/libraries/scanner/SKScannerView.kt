@@ -99,7 +99,7 @@ class SKScannerView(
                 )
                 cameraProvider?.unbindAll()
                 cameraProvider?.bindToLifecycle(
-                    fragment ?: activity,
+                    fragment?.viewLifecycleOwner ?: activity,
                     CameraSelector.DEFAULT_BACK_CAMERA,
                     preview,
                     analysisUseCase

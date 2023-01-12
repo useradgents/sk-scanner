@@ -8,10 +8,34 @@ interface SKScannerVC : SKComponentVC {
     val formats: Set<Format>
 
     sealed class Format {
-        object EAN8 : Format()
-        object EAN13 : Format()
-        object Code128 : Format()
-        object QRCode : Format()
+        object FormatUnknown : Format()
+        object FormatAllFormats : Format()
+        object FormatCode128 : Format()
+        object FormatCode39 : Format()
+        object FormatCode93 : Format()
+        object FormatCodabar : Format()
+        object FormatDataMatrix : Format()
+        object FormatEan13 : Format()
+        object FormatEan8 : Format()
+        object FormatItf : Format()
+        object FormatQrCode : Format()
+        object FormatUpcA : Format()
+        object FormatUpcE : Format()
+        object FormatPdf417 : Format()
+        object FormatAztec : Format()
+        object TypeUnknown : Format()
+        object TypeContactInfo : Format()
+        object TypeEmail : Format()
+        object TypeIsbn : Format()
+        object TypePhone : Format()
+        object TypeProduct : Format()
+        object TypeSms : Format()
+        object TypeText : Format()
+        object TypeUrl : Format()
+        object TypeWifi : Format()
+        object TypeGeo : Format()
+        object TypeCalendarEvent : Format()
+        object TypeDriverLicense : Format()
     }
 
     var scanning: Boolean

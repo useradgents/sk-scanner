@@ -30,10 +30,34 @@ class SKScannerView(
 
     fun SKScannerVC.Format.toAndroidFormat() =
         when (this) {
-            SKScannerVC.Format.EAN8 -> Barcode.FORMAT_EAN_8
-            SKScannerVC.Format.EAN13 -> Barcode.FORMAT_EAN_13
-            SKScannerVC.Format.Code128 -> Barcode.FORMAT_CODE_128
-            SKScannerVC.Format.QRCode -> Barcode.FORMAT_QR_CODE
+            SKScannerVC.Format.FormatUnknown -> Barcode.FORMAT_UNKNOWN
+            SKScannerVC.Format.FormatAllFormats -> Barcode.FORMAT_ALL_FORMATS
+            SKScannerVC.Format.FormatCode128 -> Barcode.FORMAT_CODE_128
+            SKScannerVC.Format.FormatCode39 -> Barcode.FORMAT_CODE_39
+            SKScannerVC.Format.FormatCode93 -> Barcode.FORMAT_CODE_93
+            SKScannerVC.Format.FormatCodabar -> Barcode.FORMAT_CODABAR
+            SKScannerVC.Format.FormatDataMatrix -> Barcode.FORMAT_DATA_MATRIX
+            SKScannerVC.Format.FormatEan13 -> Barcode.FORMAT_EAN_13
+            SKScannerVC.Format.FormatEan8 -> Barcode.FORMAT_EAN_8
+            SKScannerVC.Format.FormatItf -> Barcode.FORMAT_ITF
+            SKScannerVC.Format.FormatQrCode -> Barcode.FORMAT_QR_CODE
+            SKScannerVC.Format.FormatUpcA -> Barcode.FORMAT_UPC_A
+            SKScannerVC.Format.FormatUpcE -> Barcode.FORMAT_UPC_E
+            SKScannerVC.Format.FormatPdf417 -> Barcode.FORMAT_PDF417
+            SKScannerVC.Format.FormatAztec -> Barcode.FORMAT_AZTEC
+            SKScannerVC.Format.TypeUnknown -> Barcode.TYPE_UNKNOWN
+            SKScannerVC.Format.TypeContactInfo -> Barcode.TYPE_CONTACT_INFO
+            SKScannerVC.Format.TypeEmail -> Barcode.TYPE_EMAIL
+            SKScannerVC.Format.TypeIsbn -> Barcode.TYPE_ISBN
+            SKScannerVC.Format.TypePhone -> Barcode.TYPE_PHONE
+            SKScannerVC.Format.TypeProduct -> Barcode.TYPE_PRODUCT
+            SKScannerVC.Format.TypeSms -> Barcode.TYPE_SMS
+            SKScannerVC.Format.TypeText -> Barcode.TYPE_TEXT
+            SKScannerVC.Format.TypeUrl -> Barcode.TYPE_URL
+            SKScannerVC.Format.TypeWifi -> Barcode.TYPE_WIFI
+            SKScannerVC.Format.TypeGeo -> Barcode.TYPE_GEO
+            SKScannerVC.Format.TypeCalendarEvent -> Barcode.TYPE_CALENDAR_EVENT
+            SKScannerVC.Format.TypeDriverLicense -> Barcode.TYPE_DRIVER_LICENSE
         }
 
     private var cameraExecutor: ExecutorService = Executors.newSingleThreadExecutor()

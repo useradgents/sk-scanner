@@ -1,4 +1,7 @@
-# SKVideo
+> [!IMPORTANT]  
+> Ce composant n'étant plus utilisé dans aucun projet SKot maintenu, il est maintenant archivé.
+
+# SKScanner
 un composant Skot pour scanner un code-barre avec preview de la camera
 Pour l'instant seule la version android "legacy" est disponible
 
